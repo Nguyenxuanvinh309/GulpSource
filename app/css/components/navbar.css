@@ -1,0 +1,153 @@
+.desktop-navbar {
+  display: table;
+  width: 100%;
+  height: 86px; }
+  .desktop-navbar .item {
+    display: table-cell;
+    border-left: 1px solid #e0e0e0;
+    font-family: 'BRANDON_MED-WEBFONT', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer; }
+    .desktop-navbar .item:first-child {
+      border-left: none; }
+    .desktop-navbar .item.logo {
+      width: 228px;
+      text-align: left; }
+    .desktop-navbar .item .logo {
+      width: 184px; }
+    .desktop-navbar .item .search {
+      display: table;
+      margin: auto;
+      background: url("../img/search-syb.png") no-repeat;
+      width: 26px;
+      height: 26px;
+      background-position: center !important;
+      background-size: contain !important; }
+    .desktop-navbar .item.search, .desktop-navbar .item.discover, .desktop-navbar .item.gallery, .desktop-navbar .item.home, .desktop-navbar .item.login, .desktop-navbar .item.logo {
+      position: relative;
+      min-width: 80px; }
+      .desktop-navbar .item.search::after, .desktop-navbar .item.discover::after, .desktop-navbar .item.gallery::after, .desktop-navbar .item.home::after, .desktop-navbar .item.login::after, .desktop-navbar .item.logo::after {
+        content: '';
+        position: absolute;
+        left: -1px;
+        bottom: 0;
+        width: calc(100% + 2px);
+        border-bottom: 4px solid; }
+      .desktop-navbar .item.search:hover, .desktop-navbar .item.discover:hover, .desktop-navbar .item.gallery:hover, .desktop-navbar .item.home:hover, .desktop-navbar .item.login:hover, .desktop-navbar .item.logo:hover {
+        color: #fff;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
+        transition: 0.7s; }
+    .desktop-navbar .item.search::after {
+      border-bottom: 4px solid #394aa0; }
+    .desktop-navbar .item.search:hover {
+      background-color: #394aa0; }
+      .desktop-navbar .item.search:hover .search {
+        background: url("../img/search-active-syb.png") no-repeat; }
+    .desktop-navbar .item.discover > a {
+      color: #0088d7; }
+    .desktop-navbar .item.discover::after {
+      border-bottom: 4px solid #0088d7; }
+    .desktop-navbar .item.discover:hover {
+      background: #0088d7; }
+      .desktop-navbar .item.discover:hover > a {
+        color: #fff;
+        text-decoration: none; }
+    .desktop-navbar .item.gallery > a {
+      color: #b4c800; }
+    .desktop-navbar .item.gallery::after {
+      border-bottom: 4px solid #b4c800; }
+    .desktop-navbar .item.gallery:hover {
+      background: #b4c800; }
+      .desktop-navbar .item.gallery:hover > a {
+        color: #fff;
+        text-decoration: none; }
+    .desktop-navbar .item.home > a {
+      color: #ffcd00; }
+    .desktop-navbar .item.home::after {
+      border-bottom: 4px solid #ffcd00; }
+    .desktop-navbar .item.home:hover {
+      background: #ffcd00; }
+      .desktop-navbar .item.home:hover > a {
+        color: #fff;
+        text-decoration: none; }
+    .desktop-navbar .item.login {
+      width: 110px; }
+      .desktop-navbar .item.login > a {
+        color: #bcad80; }
+      .desktop-navbar .item.login::after {
+        border-bottom: 4px solid #bcad80; }
+      .desktop-navbar .item.login:hover {
+        background: #bcad80; }
+        .desktop-navbar .item.login:hover > a {
+          color: #fff;
+          text-decoration: none; }
+    .desktop-navbar .item.logo {
+      color: #f26b0c; }
+      .desktop-navbar .item.logo::after {
+        border-bottom: 4px solid #f26b0c; }
+  @media (max-width: 767px) {
+    .desktop-navbar {
+      display: none; } }
+
+.mobile-navbar {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 2;
+  color: #fff; }
+  @media (max-width: 767px) {
+    .mobile-navbar {
+      display: block; } }
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s; }
+  .overlay .item {
+    text-transform: uppercase; }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s; }
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1; }
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 60px;
+    z-index: 2;
+    cursor: pointer; }
+
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center; }
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+  .overlay .closebtn {
+    font-size: 35px;
+    line-height: 20px;
+    top: 15px;
+    right: 35px; } }

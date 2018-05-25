@@ -1,0 +1,231 @@
+@import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
+
+.desktop-navbar {
+  display: table;
+  width: $max-width;
+  height: $navbar-height;
+
+  .item {
+    display: table-cell;
+    border-left: 1px solid $border-item-menu-color;
+    font-family: 'BRANDON_MED-WEBFONT', sans-serif;
+    font-size: $medium-size;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:first-child {
+        border-left: none;
+    }
+
+    &.logo {
+        width: $logo-box-width;
+        text-align: left;
+    }
+
+    .logo {
+      width: $logo-width;
+    }
+
+    .search {
+      display: table;
+      margin: auto;
+      background: url('../img/search-syb.png') no-repeat;
+      width: 26px;
+      height: 26px;
+      background-position: center!important;
+      background-size: contain!important;
+    }
+
+    &.search, &.discover, &.gallery, &.home, &.login, &.logo  {
+      position: relative;
+      min-width: 80px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: -1px;
+        bottom: 0;
+        width: calc(100% + 2px);
+        border-bottom: 4px solid;
+      }
+
+      &:hover {
+        color: #fff;
+        @include transition(.7s);
+      }
+    }
+
+    &.search {
+      &::after {
+        border-bottom: 4px solid #394aa0;
+      }
+
+      &:hover {
+        background-color: #394aa0;
+
+        .search {
+          background: url('../img/search-active-syb.png') no-repeat;
+        }
+      }
+    }
+
+    &.discover {
+      > a {
+        color: #0088d7;
+      }
+
+      &::after {
+        border-bottom: 4px solid #0088d7;
+      }
+
+      &:hover {
+        background: #0088d7;
+        > a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.gallery {
+      > a {
+        color: #b4c800;
+      }
+
+      &::after {
+        border-bottom: 4px solid #b4c800;
+      }
+
+      &:hover {
+        background: #b4c800;
+        > a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.home {
+      > a {
+        color: #ffcd00;
+      }
+
+      &::after {
+        border-bottom: 4px solid #ffcd00;
+      }
+
+      &:hover {
+        background: #ffcd00;
+        > a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.login {
+      > a {
+        color: #bcad80;
+      }
+      width: 110px;
+
+      &::after {
+        border-bottom: 4px solid #bcad80;
+      }
+
+      &:hover {
+        background: #bcad80;
+
+        > a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.logo {
+      color: #f26b0c;
+
+      &::after {
+        border-bottom: 4px solid #f26b0c;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mobile-navbar {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 2;
+    color: #fff;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    .item {
+      text-transform: uppercase;
+    }
+
+    a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+
+        &:hover, &:focus {
+          color: #f1f1f1;
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 60px;
+        z-index: 2;
+        cursor: pointer;
+    }
+}
+
+.overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 35px;
+    line-height: 20px;
+    top: 15px;
+    right: 35px;
+  }
+}

@@ -1,0 +1,60 @@
+.footer-area {
+  background: #fff;
+  padding: 4px 0;
+
+  .footer-left, .footer-right {
+    .text {
+      font-family: 'BRANDON_MED-WEBFONT', sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    .item-group {
+      margin-bottom: 0;
+      padding-left: 0;
+
+      .item {
+        display: inline-block;
+        cursor: pointer;
+
+        &::after {
+          content: '|';
+          padding: 0 5px;
+        }
+
+        &:last-child {
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-left {
+    float: left;
+
+    .text {
+      margin-top: 3px;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.76);
+    }
+  }
+
+  .footer-right {
+    float: right;
+
+    .text {
+      text-transform: uppercase;
+      color:#000;
+    }
+  }
+
+  .footer-left, .footer-right {
+    @media (max-width: 991px) {
+      float: none;
+      text-align: center;
+    }
+  }
+}

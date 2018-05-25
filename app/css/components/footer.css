@@ -1,0 +1,34 @@
+.footer-area {
+  background: #fff;
+  padding: 4px 0; }
+  .footer-area .footer-left .text, .footer-area .footer-right .text {
+    font-family: 'BRANDON_MED-WEBFONT', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .footer-area .footer-left .item-group, .footer-area .footer-right .item-group {
+    margin-bottom: 0;
+    padding-left: 0; }
+    .footer-area .footer-left .item-group .item, .footer-area .footer-right .item-group .item {
+      display: inline-block;
+      cursor: pointer; }
+      .footer-area .footer-left .item-group .item::after, .footer-area .footer-right .item-group .item::after {
+        content: '|';
+        padding: 0 5px; }
+      .footer-area .footer-left .item-group .item:last-child::after, .footer-area .footer-right .item-group .item:last-child::after {
+        content: none; }
+  .footer-area .footer-left {
+    float: left; }
+    .footer-area .footer-left .text {
+      margin-top: 3px;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.76); }
+  .footer-area .footer-right {
+    float: right; }
+    .footer-area .footer-right .text {
+      text-transform: uppercase;
+      color: #000; }
+  @media (max-width: 991px) {
+    .footer-area .footer-left, .footer-area .footer-right {
+      float: none;
+      text-align: center; } }

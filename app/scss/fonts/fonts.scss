@@ -1,0 +1,7 @@
+@import "../helpers/mixins.scss";
+@import "../helpers/variables.scss";
+
+@include font-face('fontawesome','../fonts/fontawesome-webfont');
+@include font-face('BRANDON_MED-WEBFONT','../fonts/BRANDON_MED-WEBFONT');
+@include font-face('COLOURSANSREGULARVNU','../fonts/COLOURSANSREGULARVNU');
+@include font-face('QUICKSAND-REGULAR','../fonts/QUICKSAND-REGULAR');

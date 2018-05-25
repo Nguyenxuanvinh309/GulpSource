@@ -1,0 +1,33 @@
+$breakpoints: (
+	"phone-small": 320px,
+    "phone-normal": 414px,
+    "phone-big":   480px,
+    "phablet":      568px,
+    "tablet-small": 640px,
+    "tablet-normal": 767px,
+    "tablet-medium": 991px,
+    "tablet-big": 1024px,
+    "desktop-small": 1199px,
+    "desktop-normal": 1440px
+);
+
+// WIDTH
+$max-width: 100%;
+$logo-box-width: 228px;
+$logo-width: 184px;
+
+//HEIGHT
+$navbar-height: 86px;
+
+// TRANSFORM
+$appearance-x-max: 100%;
+$appearance-y-max: 100%;
+
+// SPACING
+$max-spacing: 100%;
+
+// SIZE
+$medium-size: 16px;
+
+// COLOR
+$border-item-menu-color: #e0e0e0;

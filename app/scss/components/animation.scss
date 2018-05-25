@@ -1,0 +1,128 @@
+@import "../helpers/mixins.scss";
+
+@include keyframes('colorimg') {
+  0%   {background-position: 100% 100%;}
+  1%  {background-position: 99% 99%;}
+  2%  {background-position: 98% 98%;}
+  3%  {background-position: 97% 97%;}
+  4%  {background-position: 96% 96%;}
+  5%  {background-position: 95% 95%;}
+  6%  {background-position: 94% 94%;}
+  7%  {background-position: 93% 93%;}
+  8%  {background-position: 92% 92%;}
+  9%  {background-position: 91% 91%;}
+  10%  {background-position: 90% 90%;}
+
+  11%   {background-position: 89% 89%;}
+  12%  {background-position: 88% 88%;}
+  13%  {background-position: 87% 87%;}
+  14%  {background-position: 86% 86%;}
+  15%  {background-position: 85% 85%;}
+  16%  {background-position: 84% 84%;}
+  17%  {background-position: 83% 83%;}
+  18%  {background-position: 82% 82%;}
+  19%  {background-position: 81% 81%;}
+  20%  {background-position: 80% 80%;}
+
+  21%  {background-position: 79% 79%;}
+  22%   {background-position: 78% 78%;}
+  23%  {background-position: 77% 77%;}
+  24%  {background-position: 76% 76%;}
+  25%  {background-position: 75% 75%;}
+  26%  {background-position: 74% 74%;}
+  27%  {background-position: 73% 73%;}
+  28%  {background-position: 72% 72%;}
+  29%  {background-position: 71% 71%;}
+  30%  {background-position: 70% 70%;}
+
+  31%  {background-position: 69% 69%;}
+  32%   {background-position: 68% 68%;}
+  33%  {background-position: 67% 67%;}
+  34%  {background-position: 66% 66%;}
+  35%  {background-position: 65% 65%;}
+  36%  {background-position: 64% 64%;}
+  37%  {background-position: 63% 63%;}
+  38%  {background-position: 62% 62%;}
+  39%  {background-position: 61% 61%;}
+  40%  {background-position: 60% 60%;}
+
+  41%  {background-position: 59% 59%;}
+  42%   {background-position: 58% 58%;}
+  43%  {background-position: 57% 57%;}
+  44%  {background-position: 56% 56%;}
+  45%  {background-position: 55% 55%;}
+  46%  {background-position: 54% 54%;}
+  47%  {background-position: 53% 53%;}
+  48%  {background-position: 52% 52%;}
+  49%  {background-position: 51% 51%;}
+  50%  {background-position: 50% 50%;}
+
+  51%  {background-position: 49% 49%;}
+  52%  {background-position: 48% 48%;}
+  53%  {background-position: 47% 47%;}
+  54%  {background-position: 46% 46%;}
+  55%  {background-position: 45% 45%;}
+  56%  {background-position: 44% 44%;}
+  57%  {background-position: 43% 43%;}
+  58%  {background-position: 42% 42%;}
+  59%  {background-position: 41% 41%;}
+  60%  {background-position: 40% 40%;}
+
+  61%  {background-position: 39% 39%;}
+  62%  {background-position: 38% 38%;}
+  63%  {background-position: 37% 37%;}
+  64%  {background-position: 36% 36%;}
+  65%  {background-position: 35% 35%;}
+  66%  {background-position: 34% 34%;}
+  67%  {background-position: 33% 33%;}
+  68%  {background-position: 32% 32%;}
+  69%  {background-position: 31% 31%;}
+  70%  {background-position: 30% 30%;}
+
+  71%  {background-position: 29% 29%;}
+  72%  {background-position: 28% 28%;}
+  73%  {background-position: 27% 27%;}
+  74%  {background-position: 26% 26%;}
+  75%  {background-position: 25% 25%;}
+  76%  {background-position: 24% 24%;}
+  77%  {background-position: 23% 23%;}
+  78%  {background-position: 22% 22%;}
+  79%  {background-position: 21% 21%;}
+  90%  {background-position: 20% 20%;}
+
+  81%  {background-position: 19% 19%;}
+  82%  {background-position: 18% 18%;}
+  83%  {background-position: 17% 17%;}
+  84%  {background-position: 16% 16%;}
+  85%  {background-position: 15% 15%;}
+  86%  {background-position: 14% 14%;}
+  87%  {background-position: 13% 13%;}
+  88%  {background-position: 12% 12%;}
+  89%  {background-position: 11% 11%;}
+  90%  {background-position: 10% 10%;}
+
+  91%  {background-position: 9% 9%;}
+  92%  {background-position: 8% 8%;}
+  93%  {background-position: 7% 7%;}
+  94%  {background-position: 6% 6%;}
+  95%  {background-position: 5% 5%;}
+  96%  {background-position: 4% 4%;}
+  97%  {background-position: 3% 3%;}
+  98%  {background-position: 2% 2%;}
+  99%  {background-position: 1% 1%;}
+  100%  {background-position: 0% 0%;}
+}
+
+@include keyframes('colorful') {
+  0%   {color: #efb74b;}
+  25%  {color: #e88a41;}
+  50%  {color: #d92348;}
+  100% {color: #77cacd;}
+}
+
+@include keyframes('colorfulsd') {
+  0%   {color: #efb74b; text-shadow: 0px 0 20px #efb74b;}
+  25%  {color: #e88a41; text-shadow: 0px 0 20px #e88a41;}
+  50%  {color: #d92348; text-shadow: 0px 0 20px #d92348;}
+  100% {color: #77cacd; text-shadow: 0px 0 20px #77cacd;}
+}

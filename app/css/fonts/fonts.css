@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "fontawesome";
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesome") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BRANDON_MED-WEBFONT";
+  src: url("../fonts/BRANDON_MED-WEBFONT.eot");
+  src: url("../fonts/BRANDON_MED-WEBFONT.eot?#iefix") format("embedded-opentype"), url("../fonts/BRANDON_MED-WEBFONT.woff") format("woff"), url("../fonts/BRANDON_MED-WEBFONT.ttf") format("truetype"), url("../fonts/BRANDON_MED-WEBFONT.svg#BRANDON_MED-WEBFONT") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "COLOURSANSREGULARVNU";
+  src: url("../fonts/COLOURSANSREGULARVNU.eot");
+  src: url("../fonts/COLOURSANSREGULARVNU.eot?#iefix") format("embedded-opentype"), url("../fonts/COLOURSANSREGULARVNU.woff") format("woff"), url("../fonts/COLOURSANSREGULARVNU.ttf") format("truetype"), url("../fonts/COLOURSANSREGULARVNU.svg#COLOURSANSREGULARVNU") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "QUICKSAND-REGULAR";
+  src: url("../fonts/QUICKSAND-REGULAR.eot");
+  src: url("../fonts/QUICKSAND-REGULAR.eot?#iefix") format("embedded-opentype"), url("../fonts/QUICKSAND-REGULAR.woff") format("woff"), url("../fonts/QUICKSAND-REGULAR.ttf") format("truetype"), url("../fonts/QUICKSAND-REGULAR.svg#QUICKSAND-REGULAR") format("svg");
+  font-weight: normal;
+  font-style: normal; }

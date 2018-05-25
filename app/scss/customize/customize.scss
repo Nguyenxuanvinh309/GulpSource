@@ -1,0 +1,54 @@
+.container {
+  &.container-cs {
+    position: relative;
+
+    @media (min-width: 1200px) {
+      width: 970px;
+    }
+  }
+}
+
+
+.container-fluid {
+  &.border-container {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-bottom: 4px solid #e80013;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-bottom: 4px solid #f4e0b9;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: -2;
+    }
+  }
+}
+
+
+.fix-container {
+  @media (min-width: 768px) {
+    position: fixed!important;
+    top: 0;
+    width: 100%!important;
+    z-index: 2;
+    background: #fff;
+  }
+}
+
+.modal-cs {
+  .modal-header {
+    border: none;
+  }
+}

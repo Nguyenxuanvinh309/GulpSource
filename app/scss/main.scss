@@ -1,0 +1,22 @@
+/*Base*/
+@import "base/reset.scss";
+
+/*Fonts*/
+@import "fonts/fonts.scss";
+
+/*Layout*/
+@import "components/navbar.scss";
+@import "components/banner.scss";
+@import "components/footer.scss";
+@import "components/textgallery.scss";
+@import "components/textimggallery.scss";
+@import "components/animation.scss";
+@import "components/video.scss";
+
+/*Component*/
+
+/*Customize*/
+@import "customize/customize.scss";
+
+/*Responsive*/
+@import "responsive/responsive.scss";
