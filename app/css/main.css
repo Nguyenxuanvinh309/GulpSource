@@ -599,7 +599,7 @@ template {
     @media (max-width: 1440px) {
       .banner-area .banner {
         width: 1440px; } }
-    @media (min-height: 1024px) {
+    @media (min-height: 800px) {
       .banner-area .banner {
         width: 2560px; } }
   .banner-area .content-area {

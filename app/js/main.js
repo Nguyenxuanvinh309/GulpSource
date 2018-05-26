@@ -40,6 +40,17 @@ function ResizeBanner() {
 		bannerVideo.css('-ms-transform','translateX('+translateXVal+')');
 		bannerVideo.css('-o-transform','translateX('+translateXVal+')');
 	}
+
+	if(widthBrowser.innerHeight() >= 800) {
+		var translateXVal = (2560 - widthBrowser.innerWidth()) / 2;
+		translateXVal = (-translateXVal) + 'px';
+
+		bannerVideo.css('transform','translateX('+translateXVal+')');
+		bannerVideo.css('-webkit-transform','translateX('+translateXVal+')');
+		bannerVideo.css('-moz-transform','translateX('+translateXVal+')');
+		bannerVideo.css('-ms-transform','translateX('+translateXVal+')');
+		bannerVideo.css('-o-transform','translateX('+translateXVal+')');
+	}
 }
 
 function MenuMobile() {
